@@ -59,7 +59,7 @@ p {
 
 .portfolio {
 	background-color: #EEE;
-	padding: 4rem 2rem;
+	padding: 4rem 1rem;
 }
 
 .reference {
@@ -100,6 +100,7 @@ p {
 .grid .placeholder {
 	padding: 0;
 	margin: 0;
+	background-color: transparent;
 }
 
 .grid-item {
@@ -118,23 +119,23 @@ p {
 	transition: all 150ms ease-out 0s;
 }
 
-.grid-item > span {
-	position: absolute;
-	top: 0;
-	height: 100%;
-	width: 100%;
-	display: inline-block;
-	text-align: center;
-}
-
 .grid-item:hover {
 	background-color: #FAFAFA;
 }
 
-@media screen and (min-width: 48em) {
-	.reference {
-		padding-left: 0;
-		padding-right: 0;
+@media screen and (min-width: 36em) {
+	.landing ul {
+		bottom: 2rem;
+		left: 2rem;
+	}
+
+	.landing ul.right {
+		right: 2rem;
+	}
+
+	.portfolio {
+		padding-left: 2rem;
+		padding-right: 2rem;
 	}
 	.grid-item {
 		width: 31%;
