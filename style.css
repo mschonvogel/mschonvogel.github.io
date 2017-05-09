@@ -2,11 +2,12 @@ body{
 	margin: 0;
 	padding: 0;
 	height: 100%;
-	font-size: 16px;
+	font-size: 18px;
+	font-family: "Times New Roman", Times, serif;
 }
 
 h1 {
-	font-size: 2rem;
+	font-size: 3rem;
 	font-weight: 500;
 }
 
@@ -16,7 +17,20 @@ h2 {
 }
 
 p {
-	line-height: 1.5rem;
+	font-size: 1.2rem;
+	line-height: 2rem;
+}
+
+a {
+	color: #000;
+}
+
+ul li {
+	margin: 0 0 7px;
+}
+
+ul li:last-child {
+	margin: 0;
 }
 
 .landing {
@@ -58,7 +72,7 @@ p {
 }
 
 .portfolio {
-	background-color: #EEE;
+	background-color: #EFEFEF;
 	padding: 4rem 1rem;
 }
 
