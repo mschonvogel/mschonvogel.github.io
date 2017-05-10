@@ -81,8 +81,17 @@ ul li:last-child {
 	padding: 4rem 1rem;
 }
 
+.portfolio ul {
+	margin: 0 0 0 0;
+	padding: 0 0 0 1rem;
+	list-style: none;
+}
+.portfolio ul li:before {
+	content: "•\00a0\00a0";
+}
+
 .reference {
-	max-width: 50rem;
+	max-width: 48rem;
 	padding: 0 0 2rem;
 	margin: 0 auto 3rem;
 }
@@ -151,19 +160,26 @@ ul li:last-child {
 }
 
 @media screen and (min-width: 36em) {
+	.reference {
+		padding-left: 120px;
+	}
+	.reference .app-icon {
+		display: block;
+	}
 	.landing ul {
 		bottom: 2rem;
 		left: 2rem;
 	}
-
 	.landing ul.right {
 		right: 2rem;
 	}
-
 	.portfolio {
 		padding-left: 2rem;
 		padding-right: 2rem;
 	}
+}
+
+@media screen and (min-width: 48em) {
 	.grid-item {
 		width: 31%;
 		padding-top: 31%;
@@ -171,26 +187,28 @@ ul li:last-child {
 	}
 }
 
-@media screen and (min-width: 48em) {
-	.reference {
-		padding: 0 120px 2rem;
-	}
-	.reference .app-icon {
-		display: block;
-	}
-}
-
 @media screen and (min-width: 64em) {
 	h1 {
 		font-size: 3.2rem;
+	}
+	.reference {
+		padding-right: 120px;
 	}
 	.grid-item {
 		width: 23%;
 		padding-top: 23%;
 		margin-bottom: 2.4%;
 	}
+	ul.features:after {
+		content: '';
+		display: inline-block;
+		width: 100%;
+	}
+	ul.features li {
+		float: left;
+		width: 50%;
+	}
 }
 
 @media screen and (min-width: 80em) {
-
 }
