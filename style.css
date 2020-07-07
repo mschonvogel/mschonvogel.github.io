@@ -7,7 +7,7 @@ body{
 	padding: 0;
 	height: 100%;
 	font-size: 18px;
-	font-family: "Times New Roman", Times, serif;
+	font-family: -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
 h1 {
@@ -56,6 +56,7 @@ ul li:last-child {
 }
 
 .landing > div > h1 {
+	font-family: "Times New Roman", Times, serif;
 	margin: 0 0 0.5rem;
 }
 
@@ -100,12 +101,19 @@ ul li:last-child {
 	margin: 0 auto 3rem;
 }
 
+.reference > header:after { 
+	content: "."; 
+	visibility: hidden; 
+	display: block; 
+	height: 0; 
+	clear: both;
+}
+
 .reference .app-icon {
-	display: none;
 	width: 100px;
 	height: 100px;
 	float: left;
-	margin-left: -120px;
+	margin-right: 1rem;
 }
 
 .reference:last-child {
@@ -117,6 +125,32 @@ ul li:last-child {
 .reference > p,
 .reference > ul {
 	margin: 0 0 1rem;
+}
+
+.reference > header {
+	margin: 0 0 1rem;
+	padding: 0;
+}
+
+.reference > header > section {
+	float: left;
+}
+
+.reference .company {
+	margin: 0 0 0.2rem;
+	font-size: 1.5rem;
+}
+
+.reference .title {
+	margin: 0 0 0.2rem;
+	font-size: 2rem;
+	color: #222;
+}
+
+.reference .date {
+	color: #888;
+	font-size: 1rem;
+	margin: 0;
 }
 
 .imprint {
@@ -168,7 +202,7 @@ ul li:last-child {
 		padding-left: 120px;
 	}
 	.reference .app-icon {
-		display: block;
+		margin-left: -120px;
 	}
 	.landing ul {
 		bottom: 2rem;
