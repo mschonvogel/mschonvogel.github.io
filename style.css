@@ -36,17 +36,17 @@ a:hover {
 }
 
 ul li {
-	margin: 0 0 7px;
+	margin: 0 0 0.5rem 0.2rem;
 }
 
 ul li:last-child {
-	margin: 0;
+	margin-bottom: 0;
 }
 
 .landing {
 	position: relative;
 	display: table;
-	height: 100%;
+	height: 85%;
 	width: 100%;
 	background-color: #FFF;
 }
@@ -124,6 +124,8 @@ ul li:last-child {
 	width: 100px;
 	height: 100px;
 	margin-right: 1.2rem;
+	border-radius: 0.8rem;
+	box-shadow: 0 0 3rem 0.15rem rgba(0, 0, 0, 0.1);
 }
 
 .reference .company {
@@ -139,7 +141,7 @@ ul li:last-child {
 
 .reference .date {
 	color: #888;
-	font-size: 1rem;
+	font-size: 0.9rem;
 	margin: 0;
 }
 
@@ -226,6 +228,10 @@ ul li:last-child {
 	.reference .company {
 		margin: 0 0 0.1rem;
 		font-size: 1.5rem;
+	}
+
+	.reference .date {
+		font-size: 1rem;
 	}
 }
 
