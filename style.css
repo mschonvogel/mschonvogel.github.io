@@ -84,12 +84,12 @@ ul li:last-child {
 }
 
 .portfolio {
-	padding: 4rem 1rem;
+	padding: 4rem 1.5rem;
 }
 
 .portfolio ul {
-	margin: 0 0 0 0;
-	padding: 0 0 0 1rem;
+	margin: 0;
+	padding: 0;
 }
 
 .reference {
@@ -147,6 +147,36 @@ ul li:last-child {
 	color: #888;
 	font-size: 0.9rem;
 	margin: 0;
+}
+
+ul.links {
+	list-style: none;
+	margin-left: 0;
+}
+
+ul.links > li {
+	background-image: url(assets/external-link.svg);
+	background-size: 0.8rem;
+	background-repeat: no-repeat;
+	background-position: left center;
+	padding-left: 1.1rem;
+	margin-bottom: 0.5rem;
+}
+
+ul.features {
+	padding: 0;
+	margin-left: 0;
+	list-style: none;
+	font-size: 0;
+}
+
+ul.features > li {
+	display: inline-block;
+	background-color: #ddd;
+	padding: 0.5rem;
+	margin: 0 0.5rem 0.5rem 0;
+	border-radius: 0.5rem;
+	font-size: 0.8rem;
 }
 
 .imprint {
@@ -210,10 +240,6 @@ ul li:last-child {
 	.portfolio {
 		padding-left: 2rem;
 		padding-right: 2rem;
-	}
-
-	ul.features {
-		column-count: 2;
 	}
 }
 
