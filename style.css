@@ -8,6 +8,7 @@ body{
 	height: 100%;
 	font-size: 18px;
 	font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+	background-color: #EFEFEF;
 }
 
 h1 {
@@ -47,6 +48,7 @@ ul li:last-child {
 	display: table;
 	height: 100%;
 	width: 100%;
+	background-color: #FFF;
 }
 
 .landing > div {
@@ -82,17 +84,12 @@ ul li:last-child {
 }
 
 .portfolio {
-	background-color: #EFEFEF;
 	padding: 4rem 1rem;
 }
 
 .portfolio ul {
 	margin: 0 0 0 0;
 	padding: 0 0 0 1rem;
-	list-style: none;
-}
-.portfolio ul li:before {
-	content: "•\00a0\00a0";
 }
 
 .reference {
@@ -101,49 +98,42 @@ ul li:last-child {
 	margin: 0 auto 3rem;
 }
 
-.reference > header:after { 
-	content: "."; 
-	visibility: hidden; 
-	display: block; 
-	height: 0; 
-	clear: both;
-}
-
-.reference .app-icon {
-	width: 100px;
-	height: 100px;
-	float: left;
-	margin-right: 1rem;
-}
-
 .reference:last-child {
 	margin-bottom: 0;
 	padding-bottom: 0;
 }
 
-.reference > h2,
 .reference > p,
 .reference > ul {
-	margin: 0 0 1rem;
+	margin: 0 0 1.5rem;
 }
 
 .reference > header {
 	margin: 0 0 1rem;
 	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: center;
 }
 
 .reference > header > section {
-	float: left;
+	flex: 1;
+}
+
+.reference .app-icon {
+	width: 100px;
+	height: 100px;
+	margin-right: 1.2rem;
 }
 
 .reference .company {
-	margin: 0 0 0.2rem;
-	font-size: 1.5rem;
+	margin: 0 0 0.3rem;
+	font-size: 1rem;
 }
 
 .reference .title {
-	margin: 0 0 0.2rem;
-	font-size: 2rem;
+	margin: 0 0 0.1rem;
+	font-size: 1.5rem;
 	color: #222;
 }
 
@@ -215,6 +205,10 @@ ul li:last-child {
 		padding-left: 2rem;
 		padding-right: 2rem;
 	}
+
+	ul.features {
+		column-count: 2;
+	}
 }
 
 @media screen and (min-width: 48em) {
@@ -222,6 +216,16 @@ ul li:last-child {
 		width: 31%;
 		padding-top: 31%;
 		margin-bottom: 3%;
+	}
+
+	.reference .title {
+		margin: 0;
+		font-size: 2rem;
+	}
+
+	.reference .company {
+		margin: 0 0 0.1rem;
+		font-size: 1.5rem;
 	}
 }
 
@@ -236,15 +240,6 @@ ul li:last-child {
 		width: 23%;
 		padding-top: 23%;
 		margin-bottom: 2.4%;
-	}
-	ul.features:after {
-		content: '';
-		display: inline-block;
-		width: 100%;
-	}
-	ul.features li {
-		float: left;
-		width: 50%;
 	}
 }
 
