@@ -1,1 +1,2 @@
-Disallow: /assets/about*
+user-agent: *
+disallow: /assets/about*

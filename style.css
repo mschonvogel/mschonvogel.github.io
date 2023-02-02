@@ -169,7 +169,12 @@ ul.links > li {
 	background-repeat: no-repeat;
 	background-position: left center;
 	padding-left: 1.1rem;
-	margin-bottom: 0.5rem;
+	margin: 0;
+}
+
+ul.links > li > a {
+	padding: 0.4rem;
+	display: inline-block;
 }
 
 ul.features {
